@@ -15,7 +15,7 @@
 
     <div class="container">
       <nav class="nav">
-        <a href="#footer" class="nav__items nav__items--cta">Contactame ahora</a>
+        <a href="#" class="nav__items nav__items--cta">Contáctame ahora</a>
         <a href="#sobreMi" class="nav__items">Sobre mi</a>
         <a href="#proyectos" class="nav__items">Proyectos</a>
       </nav>
@@ -134,6 +134,26 @@
   </main>
 
   <footer class="footer" id="footer">
+    <!-- Formulario flotante -->
+         <!-- mqakbgvk id unico correo personal que, cambiarlo por el id del correo devGsoft-->
+         <div id="contactForm" class="contact-form-container">
+          <form action="https://formspree.io/f/mqakbgvk" method="POST" class="contact-form">
+              <h2>Formulario de Contacto</h2>
+      
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+      
+              <label for="email">Correo Electrónico:</label>
+              <input type="email" id="email" name="_replyto" placeholder="Tu correo electrónico" required>
+      
+              <label for="message">Mensaje:</label>
+              <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" required></textarea>
+      
+              <button type="submit">Enviar</button>
+              <button type="button" id="closeForm">Cerrar</button>
+          </form>
+      </div>
+
     <div class="container footer__grid">
       <nav class="nav nav--footer">
           <a class="nav__items nav__items--footer" href="">Inicio</a>
@@ -166,6 +186,7 @@
   </footer>
   <!-- carga una libreria de iconos -->
   <script src="https://kit.fontawesome.com/7460d307cd.js" crossorigin="anonymous"></script>
+  <script src="./js/scriptForm.js"></script>
 </body>
 
 </html

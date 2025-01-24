@@ -30,6 +30,106 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/*Inicio estilos para formulario de contacto*/
+.contact-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Estilo para el título del formulario */
+.contact-form h2 {
+  color: var(
+    --color-secondary
+  ); /* El color de tu esquema principal (azul vibrante) */
+}
+
+/* Estilo para las etiquetas del formulario */
+.contact-form label {
+  color: var(
+    --color-secondary
+  ); /* Un tono más oscuro de azul para las etiquetas */
+  font-size: 16px; /* Opcional: ajustar el tamaño de la fuente */
+  font-weight: bold; /* Opcional: hacer las etiquetas más visibles */
+}
+
+/* Estilo para los campos de entrada (input y textarea) */
+.contact-form input,
+.contact-form textarea {
+  color: #09003b; /* Un color oscuro para el texto (gris oscuro) */
+}
+
+/* Estilo para el formulario flotante */
+.contact-form-container {
+  font-family: "Poppins", sans-serif;
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  z-index: 999; /* Aparece sobre otros elementos */
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  background-color: #ffffffad; /*le agrega color al formulario*/
+  padding: 30px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px;
+  border: 1px solid #656ff0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+/* Cambiar el color del texto del placeholder en todos los campos del formulario */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #0105fa70; /* Color que quieres para el placeholder */
+  font-style: italic; /* Opcional: poner el texto en cursiva */
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-form button:hover {
+  background-color: #35d608;
+}
+
+/* Estilo para el botón "Cerrar" */
+#closeForm {
+  background-color: #dc3700;
+}
+
+#closeForm:hover {
+  background-color: #ff4000;
+}
+/*----------------fin estilos de formulario contacto-----------------*/
+
 .container {
   width: 90%;
   margin: 0 auto;
